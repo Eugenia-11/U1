@@ -1,13 +1,9 @@
-#ifndef CIRCLE_H
-#define CIRCLE_H
+#ifndef CIRCLE
+#define CIRCLE
 
-class Circle {
-private:
-	int radius;
-public:
-	Circle();
-	Circle(int r);
-	double getArea();
-}; 
+class Circle : public Shape {
+protected:
+	virtual void draw();
+};
 
 #endif
